@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <nav>
+        <a href="/travel"><img src="https://i.imgur.com/UPd2Pai.jpg" class="small_logo" alt="Travel Buddy Logo"></a>
+        <form action="/travel/bagels"><input type="submit" value="Cancel"></form>
+    </nav>
+    <title>Edit Shop</title>
+</head>
+
+<body>
+    <center>
+        <div class="container1">
+            <h2 class="show_name new_shop">Edit Shop Form</h2>
+            <form action="/travel/<%= bagels._id%>?_method=PUT" method="POST">
+                <strong>
+                    <p class="new_form"> Name:</p>
+                </strong><br>
+                <input class="new_input" type="text" name="name" value="<%=bagels.name%>"><br>
+                <strong>
+                    <p class="new_form"> Location: </p>
+                </strong><br>
+                <input class="new_input" type="text" name="location" value="<%=bagels.location%>"><br>
+                <strong>
+                    <p class="new_form"> Description: </p>
+                </strong><br>
+                <textarea class="new_input description" type="text" name="description" cols="30"
+                    rows="10"><%=bagels.description%></textarea><br>
+                <strong>
+                    <p class="new_form"> Add Image:</p>
+                </strong><br>
+                <input class="new_input" type="text" name="img" placeholder="image2323.jpeg"
+                    value="<%=bagels.img%>"><br>
+                <input[readonly] type="number" name="upvote"><br>
+                    <input[readonly] type="number" name="downvote"><br>
+                        <input class="new_submit" type="submit" name="" value="Edit Shop">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+body {
+    background-color: lightgrey;
+}
+
+img {
+    margin-top: 5%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 10px #1e1d1d;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.main_nav {
+    margin-top: 0%;
+}
+
+.small_logo {
+    float: right;
+    margin-top: 0%;
+    width: 50px;
+    /* margin-left: 95%; */
+    box-shadow: none;
+}
+
+h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 50px;
+}
+
+div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* width: 100%; */
+    height: fit-content;
+}
+
+button {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    /* border-radius: 20%; */
+    cursor: pointer;
+    background-color: white;
+    font-size: 30px;
+}
+
+.main_page {
+    width: 400px;
+    height: 400px;
+}
+
+.logo_button {
+    margin-top: -70px;
+    /* padding: 10%; */
+    margin-bottom: 10%;
+    width: 150px;
+    box-shadow: none;
+}
+
+.categories {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* border-radius: 20%; */
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.grid {
+    margin-top: 10%;
+    /* display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; */
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    grid-gap: 15px;
+
+}
+
+.column1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 1;
+}
+
+.column2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row: 1;
+}
+
+.column3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 2;
+}
+
+.column4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+
+
+
+.bagel_shops {
+    border-radius: 0%;
+    box-shadow: none;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /* width: 50%;
+    height: 50%;
+    vertical-align: middle; */
+    margin: 0px 0px 0px 40px
+}
+
+ul {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.bagel_name {
+    margin-top: 12%;
+    text-align: center;
+}
+
+.bagel_location {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
+#upvote {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Up_green_arrow.png");
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#downvote {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b0/Down_red_arrow.png");
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.votes_section {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.vote1 {
+    margin-right: 5%;
+}
+
+.container {
+    background-color: white;
+    width: 85%;
+    height: 100%;
+    margin-top: 8%;
+    overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1e1d1d;
+}
+
+.show_img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: none;
+    border-radius: 0%;
+    /* margin-bottom: 5%; */
+    position: relative;
+    top: -20px;
+}
+
+.show_name {
+    top: -20px;
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(234, 141, 18);
+    border-bottom-width: 5px;
+    border-style: solid;
+    border-color: #1e1d1d;
+
+}
+
+
+.show_location {
+    /* margin-top: 1%; */
+}
+
+.show_description {}
+
+.delete1 {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/55ece940e4b048d1ed401c11/1450136257542-4DATU4KRB70MDENGJXJX/X%3A++The+Unknown");
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    top: 24px;
+}
+
+
+.container1 {
+    background-color: white;
+    /* padding-top: 5%; */
+    width: 85%;
+    height: 100%;
+    margin-top: 8%;
+    overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1e1d1d;
+}
+
+
+.new_shop {
+    top: -50px;
+    font-size: 50px;
+}
+
+.new_form {
+    position: relative;
+    top: -30px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.new_input {
+    position: relative;
+    top: -50px;
+    width: 80%;
+    /* height: 30px; */
+}
+
+.description {
+    height: 70px;
+
+}
+
+.new_submit {
+    position: relative;
+    top: -40px;
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+}

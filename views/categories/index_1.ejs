@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        <a href="/travel"><img src="https://i.imgur.com/UPd2Pai.jpg" class="small_logo" alt="Travel Buddy Logo"></a>
+        <a class="main_nav" href="/travel/categorie1">Back to Dining Categories</a><br>
+        <a href="/travel/bagels/new">Add New Shop</a>
+    </nav>
+    <title>Bagel Shops</title>
+</head>
+
+<body>
+    <h1>Bagel Shops</h1>
+    <ul>
+        <%for (let i=0; i< bagels.length; i++) {%>
+            <li>
+                <form action="/travel/<%=bagels[i]._id%>?_method=DELETE" method="POST"><input class="delete1"
+                        type="submit" value=""></form>
+                <a href="/travel/<%=bagels[i]._id%>">
+                    <img class="bagel_shops" src="<%=bagels[i].img%>" alt="<%= bagels[i].name%>"></a>
+                <p class="bagel_name">
+                    <%=bagels[i].name%>
+                </p><br>
+                <p class="bagel_location">
+                    <%=bagels[i].location%>
+                </p><br>
+                <div class="votes_section">
+                    <form class="vote1" action="/travel/<%=bagels[i]._id%>/upvote?_method=PUT" method="POST">
+                        <%=bagels[i].upvote%>
+                            <input type="submit" id="upvote" value="">
+                    </form>
+                    <form class="vote2" action="/travel/<%= bagels[i]._id%>/downvote?_method=PUT" method="POST">
+                        <%=bagels[i].downvote%>
+                            <input type="submit" id="downvote" value="">
+                    </form>
+                </div>
+            </li>
+            <% } %>
+    </ul>
+
+</body>
+
+</html>
