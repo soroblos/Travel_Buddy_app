@@ -53,3 +53,5 @@ York through some modal with other locations as well and be to see dining option
 based on the state selected).
 
 1. Users can upvote or downvote as many times as they woud like. -would like it to be once for each user.
+
+1. Include the ability to add a carousel inside the showpage of the documents.
